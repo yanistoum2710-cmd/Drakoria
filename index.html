@@ -1,0 +1,3733 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Drakoria - Monde Fantastique</title>
+
+
+<style>
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Georgia",serif;
+}
+
+
+body{
+
+background:#080b18;
+color:white;
+
+}
+
+
+header{
+
+position:absolute;
+top:0;
+left:0;
+width:100%;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:25px 80px;
+
+z-index:10;
+
+}
+
+
+.logo{
+
+font-size:35px;
+color:#e5b85c;
+font-weight:bold;
+
+}
+
+
+nav a{
+
+color:white;
+text-decoration:none;
+margin-left:25px;
+
+}
+
+
+
+.hero{
+
+height:100vh;
+
+background:
+
+linear-gradient(
+rgba(0,0,0,0.5),
+rgba(0,0,0,0.8)
+),
+
+url("drakoria.jpg");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+text-align:center;
+
+}
+
+
+
+.hero h1{
+
+font-size:90px;
+color:#e5b85c;
+
+}
+
+
+
+.hero p{
+
+max-width:700px;
+font-size:22px;
+
+margin:25px auto;
+
+line-height:1.6;
+
+}
+
+
+
+.buttons a{
+
+display:inline-block;
+
+background:#b47b22;
+
+color:white;
+
+padding:15px 30px;
+
+margin:10px;
+
+border-radius:10px;
+
+text-decoration:none;
+
+transition:0.3s;
+
+}
+
+
+.buttons a:hover{
+
+background:#e5b85c;
+transform:scale(1.1);
+
+}
+
+
+
+section{
+
+padding:80px;
+
+text-align:center;
+
+}
+
+
+
+h2{
+
+font-size:45px;
+color:#e5b85c;
+
+}
+
+
+
+.intro{
+
+max-width:800px;
+margin:20px auto;
+
+font-size:20px;
+
+}
+
+
+
+/* ROYAUMES */
+
+
+.royaumes{
+
+background:#101528;
+
+}
+
+
+
+.cards{
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+margin-top:50px;
+
+}
+
+
+
+.card{
+
+background:#171d35;
+
+width:320px;
+
+border-radius:15px;
+
+overflow:hidden;
+
+box-shadow:0 0 20px black;
+
+transition:0.4s;
+
+}
+
+
+
+.card:hover{
+
+transform:translateY(-15px);
+
+}
+
+
+
+.card img{
+
+width:100%;
+height:200px;
+
+object-fit:cover;
+
+}
+
+
+
+.card h3{
+
+color:#e5b85c;
+
+font-size:28px;
+
+margin:20px;
+
+}
+
+
+
+.card p{
+
+padding:0 20px;
+
+line-height:1.6;
+
+}
+
+
+
+.card button{
+
+margin:20px;
+
+padding:12px 25px;
+
+background:#b47b22;
+
+border:0;
+
+color:white;
+
+border-radius:8px;
+
+}
+
+
+
+/* CARTE */
+
+
+.map-container{
+
+position:relative;
+
+max-width:1100px;
+
+margin:50px auto;
+
+}
+
+
+
+.map{
+
+width:100%;
+
+border-radius:20px;
+
+}
+
+
+
+.lieu{
+
+position:absolute;
+
+background:#11172b;
+
+padding:15px;
+
+border:2px solid #e5b85c;
+
+border-radius:10px;
+
+width:220px;
+
+opacity:0;
+
+transition:0.3s;
+
+}
+
+
+
+.lieu:hover{
+
+opacity:1;
+
+}
+
+
+
+.asteris-point{
+
+top:30%;
+left:20%;
+
+}
+
+
+
+.nocteris-point{
+
+top:55%;
+left:65%;
+
+}
+
+
+
+.solaria-point{
+
+top:25%;
+right:15%;
+
+}
+
+
+
+.montagne-point{
+
+top:10%;
+left:50%;
+
+}
+
+
+
+.ocean-point{
+
+bottom:15%;
+left:40%;
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="logo">
+🐉 DRAKORIA
+</div>
+
+
+<nav>
+
+<a href="#">Accueil</a>
+<a href="#">Royaumes</a>
+<a href="#">Créatures</a>
+<a href="#">Histoire</a>
+
+</nav>
+
+</header>
+
+
+
+<div class="hero">
+
+
+<div>
+
+<h1>
+Bienvenue en Drakoria
+</h1>
+
+
+<p>
+Un continent oublié où les dragons,
+la magie et les anciens royaumes
+s'affrontent depuis des milliers d'années.
+</p>
+
+
+<div class="buttons">
+
+<a href="#">
+🗺️ Explorer
+</a>
+
+<a href="#">
+🐉 Créatures
+</a>
+
+<a href="#">
+📜 Histoire
+</a>
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+<section class="royaumes">
+
+
+<h2>
+Les Royaumes de Drakoria
+</h2>
+
+
+<p class="intro">
+Découvrez les grandes puissances du continent.
+</p>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<img src="asteris.jpg">
+
+<h3>
+République d'Asteris
+</h3>
+
+<p>
+Royaume de magie et de connaissance.
+</p>
+
+<button>
+Explorer
+</button>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="nocteris.jpg">
+
+<h3>
+Nocteris
+</h3>
+
+<p>
+Terre sombre remplie de mystères.
+</p>
+
+<button>
+Explorer
+</button>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="solaria.jpg">
+
+<h3>
+Solaria
+</h3>
+
+<p>
+Royaume du soleil et des flammes.
+</p>
+
+<button>
+Explorer
+</button>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+<section class="carte">
+
+
+<h2>
+Carte de Drakoria
+</h2>
+
+
+<div class="map-container">
+
+
+<img class="map" src="carte-drakoria.jpg">
+
+
+
+<div class="lieu asteris-point">
+🏰 Asteris
+</div>
+
+
+<div class="lieu nocteris-point">
+🌑 Nocteris
+</div>
+
+
+<div class="lieu solaria-point">
+☀️ Solaria
+</div>
+
+
+<div class="lieu montagne-point">
+⛰️ Monts Drakaris
+</div>
+
+
+<div class="lieu ocean-point">
+🌊 Océan d'Émeraude
+</div>
+
+
+</div>
+
+
+</section> <!-- BESTIAIRE -->
+
+
+<section class="bestiaire">
+
+
+<h2>
+Le Bestiaire de Drakoria
+</h2>
+
+
+<p class="intro">
+Des créatures anciennes vivent dans chaque région du continent.
+</p>
+
+
+
+<div class="cards">
+
+
+
+<div class="card">
+
+<img src="dragon-asteris.jpg">
+
+<h3>
+Drakoryn Ancien
+</h3>
+
+<p>
+🔥 Danger : Extrême<br><br>
+Un dragon millénaire capable de contrôler
+les flammes célestes.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="ombre-nocteris.jpg">
+
+<h3>
+Ombreloup
+</h3>
+
+<p>
+🌑 Danger : Élevé<br><br>
+Une créature rapide vivant dans les forêts
+de Nocteris.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="phoenix-solaria.jpg">
+
+<h3>
+Phoenix Solarys
+</h3>
+
+<p>
+☀️ Danger : Moyen<br><br>
+Un oiseau légendaire capable de renaître.
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- HISTOIRE -->
+
+
+<section class="histoire">
+
+
+<h2>
+L'Histoire de Drakoria
+</h2>
+
+
+<div class="timeline">
+
+
+
+<div class="card">
+
+<h3>
+-3000 : Naissance des Dragons
+</h3>
+
+<p>
+Les premiers dragons apparaissent
+dans les montagnes de Drakaris.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+-1800 : Fondation des Royaumes
+</h3>
+
+<p>
+Asteris, Nocteris et Solaria
+commencent leur expansion.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+-700 : Guerre des Ombres
+</h3>
+
+<p>
+Une force inconnue menace tout le continent.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+0 : Nouvelle Ère
+</h3>
+
+<p>
+Les aventuriers partent découvrir
+les terres oubliées.
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VILLES -->
+
+
+<section class="villes">
+
+
+<h2>
+Les Grandes Cités
+</h2>
+
+
+<div class="cards">
+
+
+
+<div class="card">
+
+<img src="astrael.jpg">
+
+<h3>
+Astraël
+</h3>
+
+<p>
+🏰 Capitale d'Asteris<br><br>
+La plus grande ville du continent,
+centre de magie et de savoir.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="noctaria.jpg">
+
+<h3>
+Noctaria
+</h3>
+
+<p>
+🌑 Capitale de Nocteris<br><br>
+Une cité cachée dans une forêt éternelle.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="solarys.jpg">
+
+<h3>
+Solarys
+</h3>
+
+<p>
+☀️ Capitale de Solaria<br><br>
+Une ville construite autour
+d'un cristal solaire.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="ville-perdue.jpg">
+
+<h3>
+Eldravûn
+</h3>
+
+<p>
+🏚️ Cité perdue<br><br>
+Une ancienne ville disparue
+après une catastrophe magique.
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- FACTIONS -->
+
+
+<section class="factions">
+
+
+<h2>
+Les Factions de Drakoria
+</h2>
+
+
+<div class="cards">
+
+
+
+<div class="card">
+
+<img src="ordre-dragon.jpg">
+
+<h3>
+L'Ordre des Dragons
+</h3>
+
+<p>
+🐉 Une organisation chargée
+de protéger l'équilibre entre humains
+et dragons.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="guilde-aventuriers.jpg">
+
+<h3>
+Guilde des Explorateurs
+</h3>
+
+<p>
+🗺️ Des aventuriers parcourant
+les régions inconnues.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="gardiens-lumiere.jpg">
+
+<h3>
+Gardiens de Solarys
+</h3>
+
+<p>
+☀️ Des chevaliers utilisant
+la magie solaire.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="ombres-noires.jpg">
+
+<h3>
+Cercle des Ombres
+</h3>
+
+<p>
+🌑 Une organisation secrète
+qui agit dans l'obscurité.
+</p>
+
+</div>
+
+
+</div>
+
+
+</section> <!-- MAGIES -->
+
+
+<section class="magie">
+
+
+<h2>
+Les Magies de Drakoria
+</h2>
+
+
+<div class="cards">
+
+
+
+<div class="card">
+
+<img src="magie-feu.jpg">
+
+<h3>
+🔥 Magie du Feu
+</h3>
+
+<p>
+Une magie utilisée par les guerriers de Solaria.
+Elle permet de contrôler les flammes.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="magie-ombre.jpg">
+
+<h3>
+🌑 Magie des Ombres
+</h3>
+
+<p>
+Une magie interdite permettant
+de manipuler les ténèbres.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="magie-nature.jpg">
+
+<h3>
+🌿 Magie Naturelle
+</h3>
+
+<p>
+Une magie liée aux forêts,
+aux plantes et aux anciens esprits.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="magie-dragon.jpg">
+
+<h3>
+🐉 Magie Draconique
+</h3>
+
+<p>
+La magie la plus rare,
+provenant directement des dragons anciens.
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ARTEFACTS -->
+
+
+<section class="artefacts">
+
+
+<h2>
+Les Artefacts Légendaires
+</h2>
+
+
+<div class="cards">
+
+
+
+<div class="card">
+
+<img src="epee-dragon.jpg">
+
+<h3>
+Épée du Dragon Originel
+</h3>
+
+<p>
+⚔️ Une arme forgée avec
+une écaille de dragon ancien.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="cristal-eternel.jpg">
+
+<h3>
+Cristal Éternel
+</h3>
+
+<p>
+💎 Une source de magie
+presque infinie.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="couronne-roi.jpg">
+
+<h3>
+Couronne des Anciens Rois
+</h3>
+
+<p>
+👑 Une relique portée
+par les premiers souverains.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="bouclier-lumiere.jpg">
+
+<h3>
+Bouclier Solarys
+</h3>
+
+<p>
+🛡️ Un bouclier créé
+avec un cristal solaire.
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- DONJONS -->
+
+
+<section class="donjons">
+
+
+<h2>
+Les Lieux Mystiques
+</h2>
+
+
+<div class="cards">
+
+
+
+<div class="card">
+
+<img src="temple-dragon.jpg">
+
+<h3>
+Temple des Dragons
+</h3>
+
+<p>
+🐉 Un ancien sanctuaire
+rempli de secrets.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="foret-interdite.jpg">
+
+<h3>
+Forêt Interdite
+</h3>
+
+<p>
+🌲 Une forêt où vivent
+des créatures inconnues.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="volcan-noir.jpg">
+
+<h3>
+Volcan Noir
+</h3>
+
+<p>
+🔥 Un volcan rempli
+de magie ancienne.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="cavernes-oubli.jpg">
+
+<h3>
+Cavernes d'Eldravûn
+</h3>
+
+<p>
+💀 Des galeries sous
+une cité disparue.
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- PERSONNAGES -->
+
+
+<section class="personnages">
+
+
+<h2>
+Les Personnages de Drakoria
+</h2>
+
+
+<div class="cards">
+
+
+
+<div class="card">
+
+<img src="roi-asteris.jpg">
+
+<h3>
+Kaelan Ier
+</h3>
+
+<p>
+👑 Roi d'Asteris.<br><br>
+Un dirigeant ayant uni
+les peuples pendant la Guerre des Ombres.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="mage-nocteris.jpg">
+
+<h3>
+Lyra Noctis
+</h3>
+
+<p>
+🌑 Grande mage de Nocteris.
+Maîtrise les pouvoirs obscurs.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="heros-dragon.jpg">
+
+<h3>
+Arion Drakarys
+</h3>
+
+<p>
+🐉 Chasseur de dragons
+devenu une légende.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="seigneur-ombre.jpg">
+
+<h3>
+Varyn l'Oublié
+</h3>
+
+<p>
+☠️ Un ancien sorcier
+qui menace le monde.
+</p>
+
+</div>
+
+
+</div>
+
+
+</section> <!-- QUETES -->
+
+
+<section class="quetes">
+
+
+<h2>
+Les Quêtes de Drakoria
+</h2>
+
+
+<div class="cards">
+
+
+
+<div class="card">
+
+<h3>
+⭐ Les Ruines Oubliées
+</h3>
+
+<p>
+Explorer une ancienne cité et retrouver
+un fragment de cristal magique.
+<br><br>
+💎 Récompense : Cristal ancien
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+⭐⭐ La Menace de Nocteris
+</h3>
+
+<p>
+Enquêter sur des attaques mystérieuses
+dans les forêts sombres.
+<br><br>
+⚔️ Récompense : Arme rare
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+⭐⭐⭐ Le Dragon du Mont Drakaris
+</h3>
+
+<p>
+Affronter une créature légendaire.
+<br><br>
+🐉 Récompense : Écaille de dragon
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+⭐⭐⭐⭐ Le Retour de Varyn
+</h3>
+
+<p>
+Empêcher le sorcier oublié
+de détruire Drakoria.
+<br><br>
+👑 Récompense : Le destin du monde
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- JOURNAL -->
+
+
+<section class="journal">
+
+
+<h2>
+Journal de Drakoria
+</h2>
+
+
+<div class="cards">
+
+
+
+<div class="card">
+
+<img src="dragon-apparition.jpg">
+
+<h3>
+Un Dragon Réapparaît
+</h3>
+
+<p>
+Des voyageurs affirment avoir aperçu
+un dragon ancien dans les montagnes.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="ruines-decouverte.jpg">
+
+<h3>
+Une Cité Perdue Découverte
+</h3>
+
+<p>
+Des explorateurs trouvent
+des ruines inconnues.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="guerre-ombres.jpg">
+
+<h3>
+La Guerre des Ombres
+</h3>
+
+<p>
+Retour sur l'un des plus grands conflits
+de l'histoire.
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+
+
+<footer>
+
+
+<div class="footer-container">
+
+
+<div>
+
+<h2>
+🐉 DRAKORIA
+</h2>
+
+<p>
+Un monde de dragons,
+de magie et de royaumes oubliés.
+</p>
+
+</div>
+
+
+
+<div>
+
+<h3>
+Explorer
+</h3>
+
+<p>
+Accueil
+</p>
+
+<p>
+Royaumes
+</p>
+
+<p>
+Créatures
+</p>
+
+<p>
+Histoire
+</p>
+
+</div>
+
+
+
+<div>
+
+<h3>
+Communauté
+</h3>
+
+<p>
+Discord
+</p>
+
+<p>
+Forum
+</p>
+
+<p>
+Actualités
+</p>
+
+</div>
+
+
+
+<div>
+
+<h3>
+Réseaux
+</h3>
+
+<p>
+🌐 Discord
+</p>
+
+<p>
+📷 Instagram
+</p>
+
+<p>
+🎮 YouTube
+</p>
+
+</div>
+
+
+
+</div>
+
+
+
+<div class="copyright">
+
+© 2026 Drakoria — Tous droits réservés.
+
+</div>
+
+
+</footer>
+
+
+
+
+
+</body>
+
+</html> <!-- JOURNAL DE DRAKORIA -->
+
+<section class="journal">
+
+<h2>
+📰 Le Journal de Drakoria
+</h2>
+
+<p class="intro">
+Les dernières nouvelles du continent, racontées par nos chroniqueurs.
+</p>
+
+
+<div class="news-grid">
+
+
+<div class="news">
+
+<h3>
+🐉 Un dragon ancien aperçu à Drakaris
+</h3>
+
+<span>
+18 Juillet 847
+</span>
+
+<p>
+Des voyageurs affirment avoir vu un dragon
+bleu gigantesque voler au-dessus des montagnes.
+Les autorités d'Asteris enquêtent.
+</p>
+
+</div>
+
+
+
+<div class="news">
+
+<h3>
+🌑 Nocteris ferme ses frontières
+</h3>
+
+<span>
+12 Juillet 847
+</span>
+
+<p>
+Après plusieurs disparitions dans la Forêt Noire,
+les dirigeants de Nocteris interdisent l'accès
+aux zones profondes.
+</p>
+
+</div>
+
+
+
+<div class="news">
+
+<h3>
+☀️ Solaria prépare un grand festival
+</h3>
+
+<span>
+5 Juillet 847
+</span>
+
+<p>
+Le Festival du Soleil revient après dix ans.
+Des guerriers et des mages de tous les royaumes
+sont invités.
+</p>
+
+</div>
+
+
+
+</div>
+
+</section><!-- QUETES -->
+
+
+<section class="quetes">
+
+
+<h2>
+🗡️ Quêtes de Drakoria
+</h2>
+
+
+<div class="cards">
+
+
+
+<div class="card">
+
+<h3>
+⭐ Les Ruines Oubliées
+</h3>
+
+<p>
+Explorer une ancienne cité et retrouver
+un cristal magique disparu.
+<br><br>
+Récompense : 💎 Cristal ancien
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+⭐⭐ La Menace de Nocteris
+</h3>
+
+<p>
+Enquêter sur des créatures mystérieuses
+dans la Forêt Noire.
+<br><br>
+Récompense : ⚔️ Arme rare
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+⭐⭐⭐ Le Dragon de Drakaris
+</h3>
+
+<p>
+Affronter un dragon légendaire.
+<br><br>
+Récompense : 🐉 Écaille de dragon
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+⭐⭐⭐⭐ Le Retour de Varyn
+</h3>
+
+<p>
+Empêcher l'ancien sorcier de revenir.
+<br><br>
+Récompense : 👑 Destin de Drakoria
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- JOURNAL QUOTIDIEN -->
+
+
+<section class="journal-drakoria">
+
+
+<h2>
+📜 Journal de Drakoria
+</h2>
+
+
+<p class="intro">
+Les événements du monde changent chaque jour.
+</p>
+
+
+
+<div class="journal-box">
+
+
+<h3 id="jour"></h3>
+
+<h4 id="date"></h4>
+
+
+<div id="evenements"></div>
+
+
+<button onclick="journalSuivant()">
+📖 Voir le jour suivant
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+
+
+<footer>
+
+
+<h2>
+🐉 Drakoria
+</h2>
+
+
+<p>
+Un monde de dragons, magie et aventures.
+</p>
+
+
+<p>
+© 2026 Drakoria - Tous droits réservés.
+</p>
+
+
+</footer>
+
+
+
+
+
+
+
+<style>
+
+
+/* JOURNAL */
+
+
+.journal-drakoria{
+
+background:#101528;
+
+text-align:center;
+
+}
+
+
+
+.journal-box{
+
+max-width:800px;
+
+margin:auto;
+
+background:#080b18;
+
+padding:40px;
+
+border-radius:20px;
+
+box-shadow:0 0 30px black;
+
+}
+
+
+
+.journal-box h3{
+
+font-size:40px;
+
+color:#e5b85c;
+
+}
+
+
+
+.journal-box h4{
+
+color:#d9a441;
+
+margin:15px;
+
+}
+
+
+
+.evenement{
+
+background:#171d35;
+
+padding:20px;
+
+margin:20px;
+
+border-radius:15px;
+
+text-align:left;
+
+}
+
+
+
+.evenement h5{
+
+color:#e5b85c;
+
+font-size:22px;
+
+}
+
+
+
+button{
+
+background:#b47b22;
+
+color:white;
+
+padding:15px 30px;
+
+border:0;
+
+border-radius:10px;
+
+cursor:pointer;
+
+}
+
+
+
+button:hover{
+
+background:#e5b85c;
+
+}
+
+
+
+footer{
+
+background:#050711;
+
+padding:50px;
+
+text-align:center;
+
+border-top:2px solid #e5b85c;
+
+}
+
+
+
+footer h2{
+
+color:#e5b85c;
+
+}
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+<script>
+
+
+const journaux=[
+
+
+{
+
+
+jour:"Jour 1",
+
+date:"18 Juillet 847",
+
+events:[
+
+["🐉 Dragon aperçu",
+"Un dragon ancien est vu dans les Monts Drakaris."],
+
+["🏰 Asteris",
+"Les mages commencent une enquête."],
+
+["🌑 Nocteris",
+"Des bruits étranges apparaissent dans la forêt."]
+
+]
+
+
+},
+
+
+
+{
+
+
+jour:"Jour 2",
+
+date:"19 Juillet 847",
+
+events:[
+
+["⚔️ Expédition",
+"Les aventuriers découvrent une porte ancienne."],
+
+["💎 Cristal trouvé",
+"Un cristal inconnu est retrouvé."],
+
+["👑 Conseil royal",
+"Les royaumes se réunissent."]
+
+]
+
+
+},
+
+
+
+
+{
+
+
+jour:"Jour 3",
+
+date:"20 Juillet 847",
+
+events:[
+
+["🌋 Volcan Noir",
+"Une énergie ancienne se réveille."],
+
+["🐺 Créature inconnue",
+"Une nouvelle espèce apparaît."],
+
+["☀️ Solaria",
+"Un grand festival commence."]
+
+]
+
+
+}
+
+
+];
+
+
+
+let jourActuel=0;
+
+
+
+function afficherJournal(){
+
+
+let j=journaux[jourActuel];
+
+
+document.getElementById("jour").innerHTML=
+"📜 "+j.jour;
+
+
+document.getElementById("date").innerHTML=
+j.date;
+
+
+let texte="";
+
+
+j.events.forEach(e=>{
+
+
+texte+=`
+
+<div class="evenement">
+
+<h5>${e[0]}</h5>
+
+<p>${e[1]}</p>
+
+</div>
+
+`;
+
+
+});
+
+
+document.getElementById("evenements").innerHTML=texte;
+
+
+}
+
+
+
+
+function journalSuivant(){
+
+
+jourActuel++;
+
+
+if(jourActuel>=journaux.length){
+
+jourActuel=0;
+
+}
+
+
+afficherJournal();
+
+
+}
+
+
+
+afficherJournal();
+
+
+</script>
+
+
+
+</body>
+
+</html><!-- PORT DE FROSTEAM -->
+
+<div class="card frosteam">
+
+
+<svg class="image-port"
+viewBox="0 0 900 500"
+xmlns="http://www.w3.org/2000/svg">
+
+
+<rect width="900" height="500" fill="#173456"/>
+
+<!-- montagnes -->
+<polygon points="0,280 180,60 350,280"
+fill="#e8f8ff"/>
+
+<polygon points="300,280 520,40 750,280"
+fill="#cceeff"/>
+
+
+<!-- mer -->
+<rect y="280"
+width="900"
+height="220"
+fill="#164b70"/>
+
+
+<!-- port -->
+<rect x="130"
+y="250"
+width="650"
+height="90"
+fill="#222"/>
+
+
+<!-- maisons -->
+<rect x="250"
+y="150"
+width="120"
+height="100"
+fill="#526b80"/>
+
+<polygon points="230,150 310,80 390,150"
+fill="#182536"/>
+
+
+<rect x="520"
+y="140"
+width="120"
+height="110"
+fill="#526b80"/>
+
+<polygon points="500,140 580,60 660,140"
+fill="#182536"/>
+
+
+<!-- bateau -->
+<polygon points="350,380 600,380 520,430 420,430"
+fill="#080d15"/>
+
+
+</svg>
+
+
+
+<h3>
+⚓ Port de Frosteam
+</h3>
+
+
+<p>
+
+❄️ <b>Région :</b> Nord de Drakoria<br>
+
+🏰 <b>Statut :</b> Cité indépendante<br>
+
+👥 <b>Population :</b> 18 000 habitants<br>
+
+⚓ <b>Activité :</b> Commerce maritime<br>
+
+🌨️ <b>Climat :</b> Glacial
+
+</p>
+
+
+<p>
+
+Le Port de Frosteam est une immense cité
+construite sur des falaises gelées.
+Ses quais accueillent les navires venant
+d'Asteris, Solaria et des terres inconnues.
+
+</p>
+
+
+<p>
+
+🏘️ <b>Quartiers :</b><br>
+
+⚓ Les Grands Quais : centre du commerce.<br>
+
+🧊 Le Vieux Bastion : ancienne forteresse.<br>
+
+🌫️ La Baie des Brumes : zone mystérieuse.
+
+</p>
+
+
+<p>
+
+🐉 <b>Créatures :</b><br>
+
+🐍 Drakylle des Glaces<br>
+
+🐲 Frostwyrm, dragon de glace légendaire.
+
+</p>
+
+
+<p>
+
+📜 <b>Histoire :</b><br>
+
+Fondé en l'an 247, Frosteam est devenu
+un refuge pendant la Guerre des Ombres.
+Aujourd'hui, c'est un lieu neutre de commerce.
+
+</p>
+
+
+</div> <!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Drakoria - Monde Fantastique</title>
+
+
+<style>
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Georgia",serif;
+}
+
+
+body{
+
+background:#080b18;
+color:white;
+
+scroll-behavior:smooth;
+
+}
+
+
+
+header{
+
+position:absolute;
+top:0;
+left:0;
+width:100%;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:25px 80px;
+
+z-index:10;
+
+}
+
+
+
+.logo{
+
+font-size:35px;
+color:#e5b85c;
+font-weight:bold;
+
+}
+
+
+
+nav a{
+
+color:white;
+text-decoration:none;
+margin-left:25px;
+
+transition:0.3s;
+
+}
+
+
+nav a:hover{
+
+color:#e5b85c;
+
+}
+
+
+
+
+.hero{
+
+
+height:100vh;
+
+
+background:
+
+linear-gradient(
+rgba(0,0,0,0.5),
+rgba(0,0,0,0.8)
+),
+
+
+url("drakoria.jpg");
+
+
+background-size:cover;
+
+background-position:center;
+
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+
+text-align:center;
+
+
+}
+
+
+
+.hero h1{
+
+
+font-size:90px;
+
+color:#e5b85c;
+
+
+text-shadow:
+0 0 20px black;
+
+
+}
+
+
+
+
+.hero p{
+
+
+max-width:700px;
+
+font-size:22px;
+
+margin:25px auto;
+
+line-height:1.6;
+
+
+}
+
+
+
+
+.buttons a{
+
+
+display:inline-block;
+
+
+background:#b47b22;
+
+
+color:white;
+
+
+padding:15px 30px;
+
+
+margin:10px;
+
+
+border-radius:10px;
+
+
+text-decoration:none;
+
+
+transition:0.3s;
+
+
+}
+
+
+
+.buttons a:hover{
+
+
+background:#e5b85c;
+
+
+transform:scale(1.1);
+
+
+}
+
+
+
+
+section{
+
+
+padding:80px;
+
+text-align:center;
+
+
+}
+
+
+
+
+h2{
+
+
+font-size:45px;
+
+color:#e5b85c;
+
+
+margin-bottom:20px;
+
+
+}
+
+
+
+.intro{
+
+
+max-width:800px;
+
+margin:20px auto;
+
+
+font-size:20px;
+
+
+line-height:1.7;
+
+
+}
+
+
+
+
+
+.cards{
+
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+margin-top:50px;
+
+
+}
+
+
+
+
+
+.card{
+
+
+background:#171d35;
+
+
+width:320px;
+
+
+border-radius:15px;
+
+
+overflow:hidden;
+
+
+box-shadow:0 0 20px black;
+
+
+transition:0.4s;
+
+
+}
+
+
+
+.card:hover{
+
+
+transform:translateY(-15px);
+
+
+}
+
+
+
+
+.card img{
+
+
+width:100%;
+
+height:200px;
+
+
+object-fit:cover;
+
+
+}
+
+
+
+
+
+.card h3{
+
+
+color:#e5b85c;
+
+
+font-size:28px;
+
+
+margin:20px;
+
+
+}
+
+
+
+
+
+.card p{
+
+
+padding:0 20px 25px;
+
+
+line-height:1.6;
+
+
+}
+
+
+
+
+
+.card button{
+
+
+margin:20px;
+
+
+padding:12px 25px;
+
+
+background:#b47b22;
+
+
+border:0;
+
+
+color:white;
+
+
+border-radius:8px;
+
+
+}
+
+
+
+
+
+/* NOUVEAU STYLE AURÉLIA */
+
+
+.aurelia{
+
+
+background:#0d1d1a;
+
+}
+
+
+
+.aurelia .card{
+
+
+border:1px solid #4caf50;
+
+
+}
+
+
+
+.aurelia h3{
+
+
+color:#9cff8a;
+
+
+}
+
+
+
+
+.bestiaire-aurelia{
+
+
+background:#101528;
+
+
+}
+
+
+
+
+.personnages-aurelia{
+
+
+background:#0d1528;
+
+
+}
+
+
+
+
+
+.journal-bunny{
+
+
+background:#111522;
+
+
+}
+
+
+
+
+
+footer{
+
+
+background:#050711;
+
+padding:50px;
+
+text-align:center;
+
+border-top:2px solid #e5b85c;
+
+
+}
+
+
+
+
+</style> <!-- CONTINENT D'AURÉLIA -->
+
+<section class="aurelia" id="aurelia">
+
+
+<h2>
+🌿 Le Continent d'Aurélia
+</h2>
+
+
+<p class="intro">
+
+Aurélia est l'un des continents les plus magnifiques
+de Drakoria.
+
+Une terre remplie de forêts anciennes,
+d'océans immenses et de créatures légendaires.
+
+C'est ici que Bunny Iesglas arrive après
+son long voyage en bateau depuis la République d'Asteris.
+
+</p>
+
+
+
+<div class="cards">
+
+
+
+<div class="card">
+
+<img src="aurelia.jpg">
+
+
+<h3>
+🌿 Les Terres d'Aurélia
+</h3>
+
+
+<p>
+
+Aurélia possède une nature exceptionnelle.
+
+Ses paysages sont composés de forêts géantes,
+de montagnes enneigées et de mers profondes.
+
+Les anciens racontent que la magie de la nature
+vient directement de ce continent.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<img src="frosteam.jpg">
+
+
+<h3>
+❄ Frostheim
+</h3>
+
+
+<p>
+
+Royaume du nord d'Aurélia.
+
+Un territoire glacé où vivent
+des peuples résistants au froid.
+
+Frostheim est célèbre pour :
+
+<br><br>
+
+❄ Ses montagnes enneigées
+
+<br>
+
+🐉 Ses dragons de glace
+
+<br>
+
+🍞 Son célèbre pain de Frostheim
+
+<br>
+
+⚓ Ses ports maritimes
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="card">
+
+<img src="verdelia.jpg">
+
+
+<h3>
+🌳 Verdélia
+</h3>
+
+
+<p>
+
+Un royaume caché au cœur
+d'une immense forêt.
+
+Les habitants de Verdélia protègent
+les anciennes créatures et les esprits
+de la nature.
+
+<br><br>
+
+On raconte que certaines forêts
+sont plus anciennes que les royaumes
+eux-mêmes.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+<img src="monterak.jpg">
+
+
+<h3>
+⛰ Montérak
+</h3>
+
+
+<p>
+
+Un royaume construit
+dans les montagnes géantes.
+
+Montérak est connu pour :
+
+<br><br>
+
+⛰ Ses sommets immenses
+
+<br>
+
+🐲 Ses dragons anciens
+
+<br>
+
+⚔ Ses guerriers légendaires
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</section> <!-- BESTIAIRE D'AURÉLIA -->
+
+<section class="bestiaire-aurelia">
+
+
+<h2>
+🐉 Le Bestiaire d'Aurélia
+</h2>
+
+
+<p class="intro">
+
+Les terres d'Aurélia abritent certaines
+des créatures les plus anciennes de Drakoria.
+
+Certaines sont dangereuses,
+d'autres vivent en harmonie avec les habitants.
+
+</p>
+
+
+
+
+<div class="cards">
+
+
+
+
+
+<div class="card">
+
+<img src="leviathan-nacre.jpg">
+
+
+<h3>
+🐋 Léviathan de nacre
+</h3>
+
+
+<p>
+
+⭐ Danger : Faible
+
+<br><br>
+
+Une gigantesque créature marine
+vivant dans l'océan d'Aurélia.
+
+Son corps est recouvert d'une
+carapace brillante ressemblant
+à de la nacre.
+
+<br><br>
+
+Malgré sa taille impressionnante,
+il n'est pas agressif.
+
+La seule règle :
+ne jamais le déranger.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+<img src="frostwyrm.jpg">
+
+
+<h3>
+🐲 Frostwyrm
+</h3>
+
+
+<p>
+
+⭐ Danger : Élevé
+
+<br><br>
+
+Un dragon de glace vivant
+dans les montagnes de Frostheim.
+
+Il contrôle les tempêtes de neige
+et peut geler une rivière entière
+en quelques secondes.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+<img src="oragear.jpg">
+
+
+<h3>
+🦌 Oragear
+</h3>
+
+
+<p>
+
+⭐ Danger : Très faible
+
+<br><br>
+
+Une créature utilisée comme monture
+par certains voyageurs.
+
+Rapide, intelligente et résistante,
+elle peut traverser les grandes plaines
+d'Aurélia.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+<img src="dragon-aurelia.jpg">
+
+
+<h3>
+🐉 Dragon d'Aurélia
+</h3>
+
+
+<p>
+
+⭐ Danger : Variable
+
+<br><br>
+
+Les dragons d'Aurélia sont parmi
+les plus anciens de Drakoria.
+
+Certains protègent les forêts,
+d'autres vivent cachés dans les montagnes.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<img src="sirene-aurelia.jpg">
+
+
+<h3>
+🌊 Sirène d'Émeraude
+</h3>
+
+
+<p>
+
+⭐ Danger : Moyen
+
+<br><br>
+
+Une créature marine mystérieuse.
+
+Elle apparaît parfois près
+des récifs de l'océan d'Aurélia.
+
+Certains marins pensent qu'elle
+protège les anciens trésors.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+</section> <!-- PERSONNAGES D'AURÉLIA -->
+
+<section class="personnages-aurelia">
+
+
+<h2>
+👥 Les Voyageurs d'Aurélia
+</h2>
+
+
+<p class="intro">
+
+Durant son voyage vers Aurélia,
+Bunny rencontre de nouveaux compagnons
+qui changeront son aventure.
+
+</p>
+
+
+
+<div class="cards">
+
+
+
+<div class="card">
+
+
+<img src="bunny.jpg">
+
+
+<h3>
+🐰 Bunny Iesglas
+</h3>
+
+
+<p>
+
+Âge : 17 ans
+
+<br><br>
+
+Originaire de la République d'Asteris,
+Bunny est un jeune aventurier
+qui décide de découvrir le monde.
+
+<br><br>
+
+Après avoir traversé l'océan,
+il arrive finalement à Aurélia.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="lance-crown.jpg">
+
+
+<h3>
+⚔️ Lance Crown
+</h3>
+
+
+<p>
+
+Lance est un voyageur rencontré
+par Bunny sur l'océan.
+
+<br><br>
+
+Calme et réfléchi,
+il accompagne son frère Tetoo
+dans leurs aventures.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="tetoo-crown.jpg">
+
+
+<h3>
+😂 Tetoo Crown
+</h3>
+
+
+<p>
+
+Le frère de Lance.
+
+<br><br>
+
+Tetoo est énergique,
+drôle et parfois difficile
+à comprendre.
+
+<br><br>
+
+Malgré son caractère,
+il possède un grand cœur.
+
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- JOURNAL DU VOYAGE DE BUNNY -->
+
+
+<section class="journal-bunny">
+
+
+<h2>
+📖 Journal de Bunny : Route vers Aurélia
+</h2>
+
+
+<div class="cards">
+
+
+
+<div class="card">
+
+
+<h3>
+⛵ Jour 14
+</h3>
+
+
+<p>
+
+Avec tout mon argent,
+je me suis acheté un beau bateau.
+
+À l'abordage !
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+🌊 Jour 15
+</h3>
+
+
+<p>
+
+Je suis encore en train
+de naviguer.
+
+J'ai pêché quelques poissons.
+
+Plus tard, j'ai rencontré
+un marin qui m'a parlé
+du mystérieux :
+
+<br><br>
+
+🐋 Léviathan de nacre.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+🌅 Jour 16
+</h3>
+
+
+<p>
+
+Il ne me reste plus qu'une dizaine
+de kilomètres avant Aurélia.
+
+Les animaux aquatiques deviennent
+immenses.
+
+Des coraux sont même visibles
+hors de l'eau.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+🌄 Jour 17
+</h3>
+
+
+<p>
+
+J'ai failli couler mon bateau
+par accident.
+
+<br><br>
+
+Le soir, je regarde le coucher
+de soleil sur l'océan.
+
+Je repense à ceux qui sont
+là-haut et j'espère qu'ils vont bien.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+⚓ Jour 18
+</h3>
+
+
+<p>
+
+Je rencontre deux garçons
+sur un petit bateau :
+
+<br><br>
+
+⚔️ Lance Crown
+
+<br>
+
+😂 Tetoo Crown
+
+<br><br>
+
+Après une rencontre assez étrange,
+ils m'apprennent qu'ils connaissent
+le Léviathan de nacre.
+
+<br><br>
+
+Nous arrivons finalement
+à Aurélia.
+
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section> <!-- CARTE AURÉLIA -->
+
+
+<section class="carte-aurelia">
+
+
+<h2>
+🗺️ Nouvelle région découverte : Aurélia
+</h2>
+
+
+<div class="map-container">
+
+
+<img class="map" src="carte-drakoria.jpg">
+
+
+
+<div class="lieu aurelia-point">
+
+🌿 Aurélia
+
+<br><br>
+
+Continent naturel rempli
+de forêts, océans et créatures
+anciennes.
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- PORT DE FROSTEAM -->
+
+
+<section class="frosteam-section">
+
+
+<h2>
+⚓ Port de Frosteam
+</h2>
+
+
+
+<div class="card frosteam">
+
+
+<img src="port-frosteam.jpg">
+
+
+
+<h3>
+⚓ Port de Frosteam
+</h3>
+
+
+<p>
+
+❄ Région : Nord d'Aurélia
+
+<br><br>
+
+🏰 Statut :
+Cité maritime indépendante
+
+<br><br>
+
+👥 Population :
+18 000 habitants
+
+<br><br>
+
+⚓ Activité :
+Commerce maritime
+
+<br><br>
+
+🌨 Climat :
+Glacial
+
+</p>
+
+
+
+
+<p>
+
+Le Port de Frosteam est une immense cité
+construite sur des falaises gelées.
+
+Ses navires parcourent l'océan
+pour commercer avec les autres régions
+de Drakoria.
+
+</p>
+
+
+
+
+<p>
+
+🐉 Créatures observées :
+
+<br><br>
+
+🐍 Drakylle des Glaces
+
+<br>
+
+🐲 Frostwyrm
+
+<br>
+
+🐋 Créatures marines d'Aurélia
+
+</p>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- ANIMATIONS AURÉLIA -->
+
+
+<style>
+
+
+.aurelia,
+.bestiaire-aurelia,
+.personnages-aurelia,
+.journal-bunny,
+.carte-aurelia,
+.frosteam-section{
+
+
+animation:apparition 1.5s ease;
+
+
+}
+
+
+
+
+.aurelia-point{
+
+
+top:45%;
+
+left:75%;
+
+
+opacity:1;
+
+background:#10261c;
+
+
+}
+
+
+
+
+.aurelia-point:hover{
+
+
+transform:scale(1.1);
+
+
+}
+
+
+
+
+
+.frosteam{
+
+
+border:2px solid #8ddcff;
+
+
+}
+
+
+
+
+.frosteam h3{
+
+
+color:#9eeaff;
+
+
+}
+
+
+
+
+@keyframes apparition{
+
+
+from{
+
+
+opacity:0;
+
+transform:translateY(50px);
+
+
+}
+
+
+to{
+
+
+opacity:1;
+
+transform:translateY(0);
+
+
+}
+
+
+}
+
+
+
+
+</style>
+
+
+
+
+
+<!-- FIN DU SITE -->
+
+
+<script>
+
+
+console.log(
+"Bienvenue dans Drakoria - Continent d'Aurélia ajouté"
+);
+
+
+</script> <footer>
+    <p>
+        © 2026 — Drakoria, créé par [Toumi et kalboussi toumi ]. Tous droits réservés.
+    </p>
+    <p>
+        Drakoria, ses personnages, ses lieux, ses créatures, ses histoires et son univers 
+        sont des créations originales protégées par le droit d’auteur.
+        Toute reproduction ou utilisation sans autorisation est interdite.
+    </p>
+</footer> <footer>
+    <p>
+        © 2026 — Drakoria, créé par [ton pseudo ou ton nom]. Tous droits réservés.
+    </p>
+
+    <p>
+        Drakoria, ses personnages, ses lieux, ses créatures, ses histoires et son univers
+        sont des créations originales protégées par le droit d’auteur.
+        Toute reproduction ou utilisation sans autorisation est interdite.
+    </p>
+
+    <p>
+        Contact : <a href="mailto:Yanistoum2710@gmail.com">Yanistoum2710@gmail.com<et <a href="mailto:miakalboussitoumi@gmail.com"></a> miakalboussitoumi@gmail.com/a> <div class="creature">
+    <h2>Forstheim</h2>
+    <p><strong>Type :</strong> Dragon de glace</p>
+    <p><strong>Lieu :</strong> Frosteam (emplacement inconnu)</p>
+    <p><strong>Légende :</strong> "Il se réveillera quand la paix reviendra."</p>
+    <p>
+        Forstheim est un dragon légendaire dont l'existence reste un mystère.
+        Selon les anciennes histoires, il dort quelque part dans les terres gelées
+        de Frosteam et attend le retour de la paix.
+    </p>
+</div> 
+    </p>
+</footer>
